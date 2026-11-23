@@ -1,0 +1,246 @@
+{
+  "title": "Gestione avvisi IMU e note",
+  "description": "Dashboard per consultare gli avvisi di accertamento IMU notificati e registrare note sulle attività successive o sulle richieste ricevute. Dati dimostrativi interamente inventati; ricerca e filtri sono disponibili nelle tabelle e non fanno parte dei moduli di inserimento.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "description": "Riepilogo degli avvisi e delle note da verificare.",
+      "metrics": [
+        {
+          "label": "Avvisi registrati",
+          "value": "128"
+        },
+        {
+          "label": "Note da classificare",
+          "value": "9"
+        },
+        {
+          "label": "Attività successive",
+          "value": "34"
+        },
+        {
+          "label": "Richieste ricevute",
+          "value": "21"
+        }
+      ],
+      "columns": [
+        "Indicatore",
+        "Valore",
+        "Dettaglio"
+      ],
+      "rows": [
+        [
+          "Avvisi registrati",
+          "128",
+          "Elenco dimostrativo aggiornato manualmente"
+        ],
+        [
+          "Note da classificare",
+          "9",
+          "Da associare a un avviso"
+        ],
+        [
+          "Attività successive",
+          "34",
+          "Annotazioni successive alla notifica"
+        ],
+        [
+          "Richieste ricevute",
+          "21",
+          "Richieste dei contribuenti"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "avvisi-imu",
+      "title": "Avvisi IMU",
+      "description": "Elenco filtrabile degli avvisi notificati, con riferimento inventato e importi dimostrativi. Usa la ricerca per riferimento o nominativo e filtra per anno e stato.",
+      "metrics": [
+        {
+          "label": "Avvisi in elenco",
+          "value": "128"
+        },
+        {
+          "label": "Notifiche da verificare",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Riferimento",
+        "Contribuente",
+        "Anno",
+        "Data notifica",
+        "Importo",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "AV-IMU-24031",
+          "Lumo Ardesia",
+          "2023",
+          "12/02/2025",
+          "€ 486,00",
+          "Notificato"
+        ],
+        [
+          "AV-IMU-24032",
+          "Vela Quarzo",
+          "2022",
+          "18/02/2025",
+          "€ 732,50",
+          "Notificato"
+        ],
+        [
+          "AV-IMU-24033",
+          "Nubi Cedro",
+          "2023",
+          "21/02/2025",
+          "€ 318,00",
+          "In verifica"
+        ],
+        [
+          "AV-IMU-24034",
+          "Lumo Brina",
+          "2021",
+          "25/02/2025",
+          "€ 905,00",
+          "Notificato"
+        ],
+        [
+          "AV-IMU-24035",
+          "Vela Selce",
+          "2022",
+          "03/03/2025",
+          "€ 254,50",
+          "Notificato"
+        ]
+      ],
+      "form": [
+        "Riferimento",
+        "Contribuente",
+        "Anno",
+        "Data notifica",
+        "Importo",
+        "Stato"
+      ]
+    },
+    {
+      "id": "note-ricevute",
+      "title": "Note e richieste",
+      "description": "Registra note relative ad attività successive alla notifica o a richieste ricevute. Le note si collegano a un avviso tramite il riferimento inventato.",
+      "metrics": [
+        {
+          "label": "Note registrate",
+          "value": "55"
+        },
+        {
+          "label": "Da associare",
+          "value": "9"
+        }
+      ],
+      "columns": [
+        "Riferimento avviso",
+        "Data nota",
+        "Tipo nota",
+        "Sintesi",
+        "Stato gestione"
+      ],
+      "rows": [
+        [
+          "AV-IMU-24031",
+          "14/02/2025",
+          "Attività successiva",
+          "Verificata la registrazione dell'esito di notifica.",
+          "Conclusa"
+        ],
+        [
+          "AV-IMU-24032",
+          "20/02/2025",
+          "Richiesta contribuente",
+          "Richiesto chiarimento sul periodo d'imposta indicato.",
+          "Da riscontrare"
+        ],
+        [
+          "AV-IMU-24033",
+          "23/02/2025",
+          "Attività successiva",
+          "Avviato controllo dei dati dichiarativi.",
+          "In corso"
+        ],
+        [
+          "AV-IMU-24035",
+          "05/03/2025",
+          "Richiesta contribuente",
+          "Richiesta verifica dell'importo accertato.",
+          "Da riscontrare"
+        ]
+      ],
+      "form": [
+        "Riferimento avviso",
+        "Data nota",
+        "Tipo nota",
+        "Sintesi",
+        "Stato gestione"
+      ]
+    },
+    {
+      "id": "gestione-note",
+      "title": "Gestione e abbinamento",
+      "description": "Consulta note non ancora abbinate e inserisci una nuova annotazione. Verifica il riferimento dell'avviso prima di salvare.",
+      "metrics": [
+        {
+          "label": "Note non abbinate",
+          "value": "9"
+        },
+        {
+          "label": "Abbinamenti recenti",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Data ricezione",
+        "Mittente inventato",
+        "Sintesi nota",
+        "Riferimento avviso",
+        "Esito abbinamento"
+      ],
+      "rows": [
+        [
+          "06/03/2025",
+          "Studio Faggio",
+          "Domanda sui termini per presentare osservazioni.",
+          "—",
+          "Da abbinare"
+        ],
+        [
+          "07/03/2025",
+          "Consorzio Nebbia",
+          "Segnalata una variazione dei dati dell'immobile.",
+          "AV-IMU-24034",
+          "Abbinata"
+        ],
+        [
+          "08/03/2025",
+          "Ufficio Lume",
+          "Annotato un controllo successivo alla notifica.",
+          "AV-IMU-24031",
+          "Abbinata"
+        ]
+      ],
+      "form": [
+        "Data ricezione",
+        "Mittente inventato",
+        "Sintesi nota",
+        "Riferimento avviso",
+        "Esito abbinamento"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "ardesia",
+    "fonts": "istituzionale"
+  }
+}
